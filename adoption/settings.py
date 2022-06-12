@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'adoptionApi.apps.AdoptionapiConfig',
-    'rest_framework', 'corsheaders',
+    'rest_framework', 'corsheaders','phonenumber_field',
 ]
 
 MIDDLEWARE = [
