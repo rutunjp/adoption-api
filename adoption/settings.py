@@ -28,7 +28,7 @@ DEBUG = False
 CORS_ORIGIN_ALLOW_ALL = DEBUG
 
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost','adoption-api.herokuapp.com']
 
 
 # Application definition
