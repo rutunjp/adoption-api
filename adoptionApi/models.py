@@ -11,6 +11,8 @@ class Animal(models.Model):
     ]
     name = models.CharField(max_length=20)
     gender = models.CharField(max_length=6,choices=GENDER_CHOICES)
+    breed= models.CharField(max_length=25)
+    age=models.CharField(max_length=20)
     caretaker= models.CharField(max_length=20)
     address=models.CharField(max_length=50)
     contactNumber= PhoneNumberField(region='IN')
