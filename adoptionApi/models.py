@@ -9,7 +9,14 @@ class Animal(models.Model):
         ('MALE','Male'),
         ('FEMALE','Female')
     ]
+    ANIMAL_CHOICES=[
+        ('Cat','Cat') ,
+        ('Dog','Dog'),
+        ('Other','Other'),
+
+    ]
     name = models.CharField(max_length=20)
+    animal= models.CharField(max_length=10,choices=ANIMAL_CHOICES)
     gender = models.CharField(max_length=6,choices=GENDER_CHOICES)
     breed= models.CharField(max_length=25)
     age=models.CharField(max_length=20)
