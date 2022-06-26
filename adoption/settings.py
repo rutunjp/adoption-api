@@ -121,7 +121,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATIC_ROOT= os.path.join(BASE_DIR,'static')
-ALLOWED_HOSTS = ['https://adoption-gamma.vercel.app/']
+ALLOWED_HOSTS = ['https://adoption-gamma.vercel.app/','https://adoption-api.herokuapp.com/']
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
