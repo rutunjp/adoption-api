@@ -5,3 +5,5 @@ class AnimalSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Animal
         fields = ('id','name','animal','gender','breed','age','caretaker','address','contactNumber')
+
+ 

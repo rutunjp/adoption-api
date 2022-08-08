@@ -7,8 +7,6 @@ router.register(r'', views.AnimalViewSet)
 router.register(r'animal', views.AnimalViewSet)
  
 urlpatterns = [
-    path('', include(router.urls)),
-    path('api-auth/', include('rest_framework.urls', namespace='rest_framework'))
+    path('api', include(router.urls)), 
 ]
-
     

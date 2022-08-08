@@ -27,7 +27,8 @@ DEBUG = False
 
 # Application definition
 CORS_ALLOWED_ORIGINS = [
-    'http://localhost:3030',
+    'http://localhost:3000',
+    'https://tap.bhomiyo.net'
 ] 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -36,22 +37,28 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-     'django_filters',  
+    'django_filters',  
     'adoptionApi.apps.AdoptionapiConfig',
-    'rest_framework', 'corsheaders','phonenumber_field',
+    'rest_framework',
+    'rest_framework.authtoken', 
+    'corsheaders',
+    'phonenumber_field' 
 ]
 REST_FRAMEWORK = {
     'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend']
 }
 MIDDLEWARE = [
-    'django.middleware.common.CommonMiddleware','corsheaders.middleware.CorsMiddleware',
-    'django.middleware.security.SecurityMiddleware',"whitenoise.middleware.WhiteNoiseMiddleware",
+    'django.middleware.common.CommonMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.security.SecurityMiddleware',
+    "whitenoise.middleware.WhiteNoiseMiddleware",
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'django.middleware.common.CommonMiddleware', "django.middleware.security.SecurityMiddleware",
+    'django.middleware.common.CommonMiddleware', 
+    "django.middleware.security.SecurityMiddleware",
     
 ]
 
@@ -86,7 +93,7 @@ DATABASES = {
     }
 }
 
-
+ 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
 
